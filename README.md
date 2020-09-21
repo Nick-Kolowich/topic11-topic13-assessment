@@ -81,6 +81,13 @@ GDP.head()
 
 
 ```python
+mu = round(GDP['Growth rate annualized'].mean(), 4)
+sigma = round(GDP['Growth rate annualized'].std(), 4)
+n = GDP['Growth rate annualized'].count()
+```
+
+
+```python
 GDP_z = pd.DataFrame(GDP['Growth rate annualized'] - mu)/(sigma)
 GDP_z.reset_index()
 GDP_z.columns = ['Growth rate z-score']
@@ -159,7 +166,6 @@ print(Q1_1950)
 
 
 ```python
-mu = round(GDP['Growth rate annualized'].mean(), 4)
 mu
 ```
 
@@ -172,7 +178,6 @@ mu
 
 
 ```python
-sigma = round(GDP['Growth rate annualized'].std(), 4)
 sigma
 ```
 
@@ -185,8 +190,7 @@ sigma
 
 
 ```python
-count = GDP['Growth rate annualized'].count()
-count
+n
 ```
 
 
@@ -204,12 +208,12 @@ sns.distplot(GDP['Growth rate annualized'])
 
 
 
-    <matplotlib.axes._subplots.AxesSubplot at 0x219e2c215e0>
+    <matplotlib.axes._subplots.AxesSubplot at 0x2170e98d160>
 
 
 
 
-![png](assessment_files/assessment_7_1.png)
+![png](assessment_files/assessment_8_1.png)
 
 
 
@@ -222,12 +226,12 @@ sns.distplot(z_data)
 
 
 
-    <matplotlib.axes._subplots.AxesSubplot at 0x219e22c4b50>
+    <matplotlib.axes._subplots.AxesSubplot at 0x2170f116b20>
 
 
 
 
-![png](assessment_files/assessment_8_1.png)
+![png](assessment_files/assessment_9_1.png)
 
 
 
@@ -472,7 +476,7 @@ pdf_plot.set_xticks(ticks=[])
 
 
 
-![png](assessment_files/assessment_12_1.png)
+![png](assessment_files/assessment_13_1.png)
 
 
 
@@ -483,12 +487,12 @@ stats_df.sort_values('Growth rate annualized').plot(x = 'Growth rate annualized'
 
 
 
-    <matplotlib.axes._subplots.AxesSubplot at 0x219e4b07040>
+    <matplotlib.axes._subplots.AxesSubplot at 0x2170f497850>
 
 
 
 
-![png](assessment_files/assessment_13_1.png)
+![png](assessment_files/assessment_14_1.png)
 
 
 
@@ -505,7 +509,7 @@ cdf_bar.set_xticks(ticks=[])
 
 
 
-![png](assessment_files/assessment_14_1.png)
+![png](assessment_files/assessment_15_1.png)
 
 
 #### Level Up
@@ -535,8 +539,11 @@ print("Kurtosis is: " + str((round(kurtosis, 4))))
 
 
 ```python
-!jupyter nbconvert --to markdown assessment.ipynb && mv assessment.md README.md
+!jupyter nbconvert --to markdown assessment.ipynb && move assessment.md README.md
 ```
+
+            1 file(s) moved.
+    
 
     [NbConvertApp] Converting notebook assessment.ipynb to markdown
     [NbConvertApp] Support files will be in assessment_files\
@@ -545,12 +552,5 @@ print("Kurtosis is: " + str((round(kurtosis, 4))))
     [NbConvertApp] Making directory assessment_files
     [NbConvertApp] Making directory assessment_files
     [NbConvertApp] Making directory assessment_files
-    [NbConvertApp] Writing 8238 bytes to assessment.md
-    'mv' is not recognized as an internal or external command,
-    operable program or batch file.
+    [NbConvertApp] Writing 8889 bytes to assessment.md
     
-
-
-```python
-
-```
