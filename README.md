@@ -304,20 +304,7 @@ stats_df
 
 
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -422,7 +409,7 @@ pdf_plot.set_xticks(ticks=[])
 
 
 
-    []
+    
 
 
 
@@ -438,7 +425,7 @@ stats_df.sort_values('Growth rate annualized').plot(x = 'Growth rate annualized'
 
 
 
-    <matplotlib.axes._subplots.AxesSubplot at 0x2170f497850>
+    
 
 
 
@@ -455,7 +442,7 @@ cdf_bar.set_xticks(ticks=[])
 
 
 
-    []
+    
 
 
 
