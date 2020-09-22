@@ -132,7 +132,7 @@ print(Q1_1950)
 
 
 ```python
-mu
+print(mu)
 ```
 
 
@@ -144,7 +144,7 @@ mu
 
 
 ```python
-sigma
+print(sigma)
 ```
 
 
@@ -156,7 +156,7 @@ sigma
 
 
 ```python
-n
+print(n)
 ```
 
 
