@@ -172,7 +172,7 @@ sns.distplot(GDP['Growth rate annualized'])
 
 
 
-    <matplotlib.axes._subplots.AxesSubplot at 0x2170e98d160>
+    
 
 
 
