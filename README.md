@@ -1,3 +1,5 @@
+I didn't read the instructions correctly, I thought we were just supposed to scrape data from any website. This is US GDP quarterly growth rates scraped from the FRED website. 
+
 ```python
 import pandas as pd
 import numpy as np
