@@ -78,24 +78,6 @@ z_scores = GDP_z['Growth rate z-score']
 GDP_z = GDP_z[['Date','Growth rate z-score']]
 GDP_z.head()
 ```
-
-
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
