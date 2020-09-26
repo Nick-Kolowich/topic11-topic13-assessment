@@ -1,5 +1,3 @@
-I didn't read the instructions correctly, I thought we were supposed to scrape data from any website. This data is US GDP quarterly growth rates scraped from the FRED website. It was luckily fairly normally distributed and I was able to calculate z-scores and plot the pdf & cdf. Just let me know if I should re-do the assessment.
-
 ```python
 import pandas as pd
 import numpy as np
